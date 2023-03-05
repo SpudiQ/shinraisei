@@ -1,12 +1,21 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link>
+    <router-link to="/auth">About</router-link>
   </nav>
   <router-view/>
+  <footer>
+
+  </footer>
 </template>
 
 <style>
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +31,7 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  margin: 0 5px
 }
 
 nav a.router-link-exact-active {
