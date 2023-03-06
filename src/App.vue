@@ -8,28 +8,28 @@
   <header class="header container">
 
     <div class="logo">
-      <img src="src/img/main-page/text 1.png" alt="logo">
+      <img src="../src/assets/logos/MainLogo.png" alt="logo">
     </div>
 
     <div class="navigation">
       <nav class="nav">
-        <a href="" class="nav-link active">Главная</a>
+        <a href="/" class="nav-link">Главная</a>
         <a href="" class="nav-link">Категории</a>
         <a href="" class="nav-link">Новости</a>
-        <a href="" class="nav-link">Контакты</a>
+        <a href="/about" class="nav-link">Контакты</a>
       </nav>
     </div>
 
     <div class="navigation-logos">
 
       <a href="">
-        <img src="src/img/main-page/icons8-поиск-50 (1) 3.png" alt="search">
+        <img src="../src/assets/icons/HeaderSearch.png" alt="search">
       </a>
       <a href="">
-        <img src="src/img/main-page/icons8-корзина-64 1.png" alt="cart">
+        <img src="../src/assets/icons/HeaderCart.png" alt="cart">
       </a>
       <a href="">
-        <img src="src/img/main-page/icons8-ход-в-систему,-в-кружке,-стрелка-вниз-48 1.png" alt="account">
+        <img src="../src/assets/icons/HeaderLogin.png" alt="login">
       </a>
 
     </div>
@@ -60,10 +60,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-}
-
-header {
-	font-size: 0.875rem;
 }
 
 body {
@@ -101,13 +97,14 @@ nav a.router-link-exact-active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
 }
 
 
 .nav-link {
     font-size: 24px;
     padding-right: 70px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .navigation-logos img {
@@ -119,5 +116,12 @@ nav a.router-link-exact-active {
     text-decoration-color: #525252;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
+}
+
+.container {
+    max-width: 1410px;
+    padding:  15px;
+    margin: 0 auto;
+    box-sizing: content-box;
 }
 </style>

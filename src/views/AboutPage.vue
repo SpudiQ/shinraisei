@@ -12,17 +12,17 @@
 
                 <div>
                     <label>Электронная почта:</label>
-                    <a href="mailto:shinransei@gmail.com">shinransei@gmail.com</a>
+                    <a href="mailto:shinransei@gmail.com"> shinransei@gmail.com</a>
                 </div>
 
                 <div class="text-block-about">
                     <label>Номер телефона:</label>
-                    <a href="tel:+7911999999">+7 911-999-99-99</a>
+                    <a href="tel:+7911999999"> +7 911-999-99-99</a>
                 </div>
 
                 <p class="text-block-about">Адрес: ул. д.</p>
 
-                <p class="text-block-about gray">Shinraisei</p>
+                <p class="text-block-about gray">shinraisei</p>
 
             </div>
 
@@ -30,9 +30,9 @@
 
                 <div class="about-logos">
 
-                    <img src="src/img/main-page/icons8-вконтакте-50.png" alt="vk">
-                    <img src="src/img/main-page/icons8-instagram-64.png" alt="inst">
-                    <img src="src/img/main-page/icons8-телеграм-48.png" alt="telegram">
+                    <img src="../assets/icons/vkontakte.png" alt="vk">
+                    <img src="../assets/icons/instagram.png" alt="inst">
+                    <img src="../assets/icons/telegram.png" alt="telegram">
 
                 </div>
 
@@ -61,6 +61,11 @@ export default {
 }
 </script>
 <style scoped>
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
 
 .container {
     max-width: 1410px;
@@ -96,7 +101,7 @@ export default {
 }
 
 .about-logos {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: flex-end;
 }
