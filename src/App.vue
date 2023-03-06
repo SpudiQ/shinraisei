@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link>
-    <router-link to="/auth">About</router-link>
+    <router-link to="/auth">Auth</router-link>
   </nav>
   <router-view/>
   <footer>
@@ -10,10 +10,15 @@
 </template>
 
 <style>
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background: #0A0A0A;
 }
 
 #app {
@@ -21,7 +26,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
 }
 
 nav {
@@ -30,7 +35,6 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
   margin: 0 5px
 }
 
