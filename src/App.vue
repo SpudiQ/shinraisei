@@ -2,30 +2,80 @@
   <nav>
     <router-link to="/">Home</router-link>
     <router-link to="/auth">Auth</router-link>
+    <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+
+  <header class="header container">
+
+    <div class="logo">
+      <img src="src/img/main-page/text 1.png" alt="logo">
+    </div>
+
+    <div class="navigation">
+      <nav class="nav">
+        <a href="" class="nav-link active">Главная</a>
+        <a href="" class="nav-link">Категории</a>
+        <a href="" class="nav-link">Новости</a>
+        <a href="" class="nav-link">Контакты</a>
+      </nav>
+    </div>
+
+    <div class="navigation-logos">
+
+      <a href="">
+        <img src="src/img/main-page/icons8-поиск-50 (1) 3.png" alt="search">
+      </a>
+      <a href="">
+        <img src="src/img/main-page/icons8-корзина-64 1.png" alt="cart">
+      </a>
+      <a href="">
+        <img src="src/img/main-page/icons8-ход-в-систему,-в-кружке,-стрелка-вниз-48 1.png" alt="account">
+      </a>
+
+    </div>
+
+  </header>
+
+  <router-view />
   <footer>
 
   </footer>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+#a, #b, #c, #d {
+	object-fit: cover;
+	width: 100%;
+	height: 92.7vh;
+	display: none;
+	z-index: 1;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+	font-size: 0.875rem;
 }
 
 body {
   background: #0A0A0A;
+  margin: 0;
+	padding: 0;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Jost', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: white;
 }
 
@@ -40,5 +90,34 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+
+.header {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
+.nav-link {
+    font-size: 24px;
+    padding-right: 70px;
+}
+
+.navigation-logos img {
+    margin-right: 15px;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #525252;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
 }
 </style>
