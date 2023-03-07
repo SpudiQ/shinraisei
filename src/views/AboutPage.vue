@@ -30,9 +30,9 @@
 
                 <div class="about-logos">
 
-                    <img src="../assets/icons/vkontakte.png" alt="vk">
-                    <img src="../assets/icons/instagram.png" alt="inst">
-                    <img src="../assets/icons/telegram.png" alt="telegram">
+                    <img src='@/assets/icons/vkontakte.png' alt="vk">
+                    <img src='@/assets/icons/instagram.png' alt="inst">
+                    <img src='@/assets/icons/telegram.png' alt="telegram">
 
                 </div>
 
@@ -49,7 +49,7 @@
 
         <div class="line-end">
 
-            <img src="src/img/main-page/Line1.png" alt="line">
+            <img src='@/assets/other/Line1.png' alt="line">
 
         </div>
 
@@ -111,6 +111,11 @@ a {
 }
 
 .maps{
+    display: flex;
+    justify-content: center;
+}
+
+.line-end {
     display: flex;
     justify-content: center;
 }

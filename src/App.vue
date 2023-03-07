@@ -8,28 +8,28 @@
   <header class="header container">
 
     <div class="logo">
-      <img src="../src/assets/logos/MainLogo.png" alt="logo">
+      <img src='@/assets/logos/MainLogo.png' alt="logo">
     </div>
 
     <div class="navigation">
       <nav class="nav">
-        <a href="/" class="nav-link">Главная</a>
-        <a href="" class="nav-link">Категории</a>
-        <a href="" class="nav-link">Новости</a>
-        <a href="/about" class="nav-link">Контакты</a>
+        <router-link class="nav-link" to="/">Главная</router-link>
+        <router-link class="nav-link" to="/category">Категории</router-link>
+        <router-link class="nav-link" to="/news">Новости</router-link>
+        <router-link class="nav-link" to="/about">Контакты</router-link>
       </nav>
     </div>
 
     <div class="navigation-logos">
 
       <a href="">
-        <img src="../src/assets/icons/HeaderSearch.png" alt="search">
+        <img src='@/assets/icons/HeaderSearch.png' alt="search">
       </a>
       <a href="">
-        <img src="../src/assets/icons/HeaderCart.png" alt="cart">
+        <img src='@/assets/icons/HeaderCart.png' alt="cart">
       </a>
       <a href="">
-        <img src="../src/assets/icons/HeaderLogin.png" alt="login">
+        <img src='@/assets/icons/HeaderLogin.png' alt="login">
       </a>
 
     </div>
@@ -85,7 +85,11 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #525252;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 }
 
 
